@@ -108,7 +108,8 @@ body {
     box-shadow: 2px 4px 40px 0px rgba(#000, 0.05);
     transition: 0.3s;
     font-size: 1rem;
-
+    font-family: 'Nunito', sans-serif;
+    
     &:focus {
       outline: none;
       box-shadow:  2px 4px 40px 0px rgba($primary-color, 0.1);

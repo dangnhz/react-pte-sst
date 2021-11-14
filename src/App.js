@@ -14,7 +14,7 @@ const App = () => {
 
 	useEffect(() => {
 		axios
-			.get('/data/sst-data.json')
+			.get(process.env.REACT_APP_JSON)
 			.then((res) => setQuestions(res.data))
 			.catch((err) => console.log(err));
 	}, []);

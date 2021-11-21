@@ -194,19 +194,19 @@ const App = () => {
 							{results && (
 								<div className="results">
 									<span>
-										Content: <span style={{ color: '#F8176D', fontWeight: 'bold' }}>{results.context}/2</span>
+										Content: <span style={{ color: '#F8176D', fontWeight: 'bold' }}>{Number.parseFloat(results.context).toFixed(2)} / 2</span>
 									</span>
 									<span>
-										Grammar: <span style={{ color: '#F8176D', fontWeight: 'bold' }}>{results.grammar}/2</span>
+										Grammar: <span style={{ color: '#F8176D', fontWeight: 'bold' }}>{Number.parseFloat(results.grammar).toFixed(2)} / 2</span>
 									</span>
 									<span>
-										Spelling: <span style={{ color: '#F8176D', fontWeight: 'bold' }}>{results.spelling}/2</span>
+										Spelling: <span style={{ color: '#F8176D', fontWeight: 'bold' }}>{Number.parseFloat(results.spelling).toFixed(2)} / 2</span>
 									</span>
 									<span>
-										Form: <span style={{ color: '#F8176D', fontWeight: 'bold' }}>{results.form}/2</span>
+										Form: <span style={{ color: '#F8176D', fontWeight: 'bold' }}>{Number.parseFloat(results.form).toFixed(2)} / 2</span>
 									</span>
 									<span>
-										Marks: <span style={{ color: '#F8176D', fontWeight: 'bold' }}>{results.marks}/90</span>
+										Marks: <span style={{ color: '#F8176D', fontWeight: 'bold' }}>{Number.parseFloat(results.marks).toFixed(2)} / 90</span>
 									</span>
 								</div>
 							)}

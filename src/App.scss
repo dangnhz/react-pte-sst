@@ -109,6 +109,7 @@ body {
     transition: 0.3s;
     font-size: 1rem;
     font-family: 'Nunito', sans-serif;
+    resize: vertical;
     
     &:focus {
       outline: none;
@@ -147,6 +148,11 @@ body {
     &:hover {
       background-color: #ff3d88;
     }
+
+    &:disabled {
+      background-color: #f878a9;
+      cursor: not-allowed;
+    }
   }
 
   .matched-keyword  {
@@ -165,4 +171,34 @@ body {
       padding: 0 4px;
     }
   }
+}
+
+.word-user-input {
+  display: flex;
+  justify-content: space-between;
+
+  #user-id {
+    border: none;
+    padding: 8px 1rem;
+    border-radius: 10px;
+    margin-left: 5px;
+    width: 100px;
+  }
+}
+
+.count-down {
+  text-align: center;
+  margin-bottom: 1rem;
+
+  &.hide {
+    opacity: 0;
+  }
+}
+
+.results {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: space-between;
+
+  @extend .question-box;
 }

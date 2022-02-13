@@ -248,7 +248,7 @@ const App = () => {
                 <div className="score">
                   Content: {isSubmitting && <div className="spinner-2"></div>}
                   {!isSubmitting && !results && "N/A"}
-                  {results && (
+                  {results && !isSubmitting && (
                     <span
                       className="score-number"
                       style={{ color: "#F8176D", fontWeight: "bold" }}
@@ -260,7 +260,7 @@ const App = () => {
                 <div className="score">
                   Grammar: {isSubmitting && <div className="spinner-2"></div>}
                   {!isSubmitting && !results && "N/A"}
-                  {results && (
+                  {results && !isSubmitting &&(
                     <span
                       className="score-number"
                       style={{ color: "#F8176D", fontWeight: "bold" }}
@@ -272,7 +272,7 @@ const App = () => {
                 <div className="score">
                   Spelling: {isSubmitting && <div className="spinner-2"></div>}
                   {!isSubmitting && !results && "N/A"}
-                  {results && (
+                  {results && !isSubmitting && (
                     <span
                       className="score-number"
                       style={{ color: "#F8176D", fontWeight: "bold" }}
@@ -284,7 +284,7 @@ const App = () => {
                 <div className="score">
                   Form: {isSubmitting && <div className="spinner-2"></div>}
                   {!isSubmitting && !results && "N/A"}
-                  {results && (
+                  {results && !isSubmitting && (
                     <span
                       className="score-number"
                       style={{ color: "#F8176D", fontWeight: "bold" }}
@@ -296,7 +296,7 @@ const App = () => {
                 <div className="score">
                   Marks: {isSubmitting && <div className="spinner-2"></div>}
                   {!isSubmitting && !results && "N/A"}
-                  {results && (
+                  {results && !isSubmitting && (
                     <span
                       className="score-number"
                       style={{ color: "#F8176D", fontWeight: "bold" }}
